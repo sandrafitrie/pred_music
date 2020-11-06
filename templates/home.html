@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<div><center><h1><b>THIS IS PREDICTION HOME</b></h1></center></div> 
+<div>
+	<form action="{% url 'result' %}">
+
+	{% csrf_token %}
+	
+	AGE: <center><input type="text" required name="age"><br><br></center>
+	GENDER: <center><input type="text" required name="gender"><br><br></center>
+
+	<input type="submit" name="" value="submit">
+	
+</form>
+</div>
+</body>
+</html>
